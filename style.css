@@ -1,92 +1,44 @@
 @font-face {
-  font-family: testy;
-  src: url(./NeueMachina-Light_gwWCZxVuQl.ttf);
+  font-family: avicii;
+  src: url(./VerminVibes2Soft-grr4.ttf);
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-:root {
-  --about-me: #117dd7;
-  --education: #37353e;
-  --Skills: #25211f;
-  --Projects: #2c2b3f;
-  --Contactme: #2a3026;
 }
 
 html,
 body {
-  height: 100%;
   width: 100%;
-}
-#header {
-  background-color: rgb(27, 27, 27);
-  text-align: center;
-  padding: 3em;
-  color: whitesmoke;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./avicii.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 h1 {
-  font-family: testy;
-  padding: 15px;
-  font-size: 3em;
-}
-#container {
-  background-color: rgb(85, 85, 85);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.box {
-  width: 50%;
-  background-color: aquamarine;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-}
-h2 {
   color: white;
-  margin-bottom: 1em;
-  text-transform: uppercase;
+  font-family: avicii;
+  font-size: 5em;
+  letter-spacing: 10px;
+  font-weight: 300;
 }
-#about > h2 {
-  color: black;
-}
-#about {
-  background-color: white;
-}
-
-#education {
-  background-color: var(--education);
-}
-#Skills {
-  background-color: var(--Skills);
-}
-#Projects {
-  background-color: var(--Projects);
-}
-#Contactme {
-  background-color: var(--Contactme);
-}
-p {
-  background-color: white;
-  margin-bottom: 10px;
-  padding: 0.5em;
-  width: 60%;
-}
-
-#footer {
-  display: block;
-  width: 100%;
-  background-color: black;
+button {
+  padding: 20px 30px;
+  width: 300px;
+  background-color: transparent;
   color: white;
-  padding: 2em;
-  text-align: center;
+  border: 1px solid white;
+  font: 1em avicii;
+  letter-spacing: 5px;
+}
+button:hover {
+  background-color: white;
+  color: #000;
 }
