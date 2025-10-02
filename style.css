@@ -1,0 +1,104 @@
+@font-face {
+  font-family: nomad;
+  src: url(Mauline.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+css {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+nav > h1 {
+  font-size: 50px;
+  font-family: nomad;
+  font-weight: 100;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+#first-nav > a,
+#last-nav > a {
+  margin-left: 10px;
+}
+
+nav + h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 200px;
+}
+#imgs {
+  top: 40%;
+  margin-top: 2%;
+  margin-left: 40%;
+}
+#img1 {
+  transform: rotate(10deg);
+  left: 30%;
+  position: absolute;
+  width: 200px;
+  border-radius: 10%;
+}
+#img2 {
+  transform: rotate(-10deg);
+  top: 55%;
+  left: 42%;
+  position: absolute;
+  width: 350px;
+  border-radius: 10%;
+}
+#img3 {
+  transform: rotate(-10deg);
+  left: 58%;
+  position: absolute;
+  width: 200px;
+  border-radius: 10%;
+}
+.leftsec {
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 180px;
+}
+.leftsec > p {
+  margin-top: 10px;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > button {
+  padding: 20px;
+  border-radius: 40px;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
