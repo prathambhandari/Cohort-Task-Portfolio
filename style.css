@@ -1,0 +1,192 @@
+:root {
+  --colors: #383636;
+}
+@font-face {
+  font-family: satoshi;
+  src: url(./Satoshi-Variable.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right bottom,
+    #b0d0dd 0%,
+    /* #dbe4e5 40%, */ /* #f1ddcf 75%, */ #f9e6d7 100%
+  );
+  font-family: satoshi;
+}
+#logo {
+  height: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 130px;
+}
+
+#header > a {
+  text-decoration: none;
+  color: var(--colors);
+  padding: 20px;
+  font-weight: 700;
+}
+#header {
+  padding: 20px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 10px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+
+#play {
+  height: 30px;
+}
+
+#shirtP {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  position: absolute;
+}
+
+#shirt {
+  height: 800px;
+  z-index: 3;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 100px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #1d2a2e;
+  color: white;
+}
+#profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profiles > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #1d2a2e;
+}
+
+#btn {
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 15px 50px;
+  background-color: white;
+  color: var(--colors);
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#img2 {
+  margin-left: 90px;
+  position: absolute;
+}
+#img3 {
+  margin-left: 160px;
+  position: absolute;
+}
+#img4 {
+  margin-left: 260px;
+  position: absolute;
+}
+#img5 {
+  margin-left: 380px;
+  position: absolute;
+}
+
+#profiles > h3 {
+  left: 15%;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  margin-left: 22%;
+  color: white;
+}
+
+.title > h1 {
+  font-size: 90px;
+}
+
+#care {
+  z-index: 0;
+  margin-left: 70px;
+}
+.shirts {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 20px;
+
+  left: 86%;
+  top: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.shirts > h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.shirts > p {
+  margin: 10px;
+  font-weight: 500;
+  color: #1d2a2e;
+}
+.shirts > img {
+  width: 180px;
+  height: 200px;
+}
+
+.quote1 {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  left: 32%;
+  top: 20%;
+  align-items: center;
+}
+
+.quote2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  left: 56%;
+  top: 34%;
+}
