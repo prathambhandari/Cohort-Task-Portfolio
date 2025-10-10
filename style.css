@@ -1,0 +1,446 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 190px 1fr;
+
+  grid-template-areas:
+    "nav nav"
+    "h11 desc"
+    "img img";
+}
+.nav {
+  width: 100%;
+  background-color: #ffffff;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+}
+.nav .logo {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  width: 500px;
+}
+.button button {
+  padding: 13px 25px;
+  border-radius: 50px;
+  background-color: #035fff;
+  color: white;
+  outline: none;
+  border: none;
+}
+.button button:first-child {
+  background-color: white;
+  color: #035fff;
+  border: 1px solid #035fff;
+}
+.button2 button:first-child {
+  background-color: #035fff;
+  color: white;
+  border: 1px solid #035fff;
+}
+.button2 button:nth-child(2) {
+  background-color: white;
+  color: #035fff;
+  border: 1px solid #035fff;
+}
+.h11 {
+  grid-area: h11;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  align-items: center;
+}
+.desc {
+  width: 100%;
+  grid-area: desc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: larger;
+  padding: 20px 30% 20px 40px;
+}
+.desc p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
+.main > #heroimg {
+  height: 60%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 30px;
+  grid-area: img;
+}
+
+.logo > img {
+  height: 50px;
+}
+
+.main2 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr;
+}
+
+.bigcard {
+  background-color: #f7f8fa;
+
+  width: 80%;
+  height: 90%;
+  padding-bottom: 30px;
+  border-radius: 30px;
+}
+
+.textrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.textrow div h2 {
+  font-size: 60px;
+}
+.textrow div p {
+  color: gray;
+  width: 150px;
+}
+/* Univarsal button class */
+.btton {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid black;
+  font-weight: 500;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigcard {
+  padding: 2%;
+  gap: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "abt img"
+    "h3 img"
+    "p img";
+}
+.bigcard img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+  border-radius: 30px;
+}
+
+.bigcard button {
+  grid-area: abt;
+}
+.bigcard h3 {
+  grid-area: h3;
+  font-size: 40px;
+  width: 80%;
+  margin-top: 40px;
+}
+.bigcard p {
+  grid-area: p;
+  width: 90%;
+  color: gray;
+}
+
+.main3 {
+  height: 100%;
+  width: 100%;
+  padding: 50px 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 60px 110px 1fr;
+
+  grid-template-areas:
+    "button button"
+    "h2 p"
+    "cards cards";
+}
+.main3 button {
+  grid-area: button;
+}
+.main3 h2 {
+  grid-area: h2;
+  font-size: 40px;
+  width: 500px;
+}
+
+.main3 p {
+  grid-area: p;
+}
+.card1 {
+  background-image: url("./images/navis/men3.png");
+}
+.card2 {
+  background-image: url("./images/navis/man1.jpg");
+}
+.card3 {
+  background-image: url("./images/navis/man2.jpg");
+}
+.card4 {
+  background-image: url("./images/navis/woman1.jpg");
+}
+.card5 {
+  background-image: url("https://images.stockcake.com/public/1/b/2/1b233006-c7d5-4955-8499-b591153b7fd7_large/confident-business-professional-stockcake.jpg");
+}
+.card6 {
+  background-image: url("https://t4.ftcdn.net/jpg/04/43/25/95/360_F_443259545_PsPbDmm8HY7JLQU9Ew9DPOdAHtIhMtnD.jpg");
+}
+.card7 {
+  background-image: url("https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?cs=srgb&dl=pexels-olly-3756681.jpg&fm=jpg");
+}
+.card8 {
+  background-image: url("https://t4.ftcdn.net/jpg/06/63/17/45/360_F_663174509_cI98mWznXts28zFrfrIenJlpxZQutWA0.jpg");
+}
+.card9 {
+  background-image: url("https://previews.123rf.com/images/tonefotografia/tonefotografia2101/tonefotografia210102601/162071823-portrait-of-beautiful-professional-business-woman.jpg");
+}
+.card10 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRty50rNo9WiTu5rt_dYyACIw6qgQGxbECHoA&s");
+}
+
+.main3 .card {
+  grid-area: card;
+  background-color: aquamarine;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  align-items: center;
+  width: 250px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+#infos {
+  position: absolute;
+  background-color: #035fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  display: none;
+}
+
+.card:hover #infos {
+  display: flex;
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+#social > i {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+#infos div h4 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+#nb {
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.card #freespace h4 {
+  font-size: 25px;
+}
+.card #freespace p {
+  font-size: 13px;
+  color: rgb(177, 177, 177);
+}
+
+#freespace {
+  height: 100px;
+  width: 120%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(transparent, black);
+  color: white;
+  gap: 5px;
+}
+
+#cards {
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  grid-area: cards;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.main3 {
+  height: 100%;
+  width: 100%;
+}
+#milestones {
+  width: 130%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#milestones > img {
+  width: 600px;
+  object-fit: cover;
+  height: 500px;
+  border-radius: 30px;
+}
+
+#jon {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#syms {
+  margin-bottom: 50px;
+}
+#syms i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+  justify-content: center;
+  height: 80px;
+}
+
+#syms div > div {
+  background-color: #035fff;
+  height: 28px;
+  width: 100%;
+  border: none;
+}
+#syms > div {
+  background-color: #c4daff;
+  height: 100px;
+  width: 6%;
+  margin-left: 15px;
+}
+#journey {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+#journey h2 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#journey h1 {
+  font-size: 25px;
+}
+#journey p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.main4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigcard2 {
+  width: 80%;
+  padding: 2%;
+  gap: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "abt img"
+    "p img"
+    "h3 img";
+}
+.bigcard2 img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+  border-radius: 30px;
+}
+
+.bigcard2 .bton {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: abt;
+}
+.bigcard2 h3 {
+  grid-area: h3;
+  font-size: 20px;
+  display: flex;
+  width: 80%;
+  margin-top: 40px;
+}
+.bigcard2 h3 > p {
+  padding-left: 20px;
+  color: gray;
+}
+
+.bigcard2 p {
+  grid-area: p;
+  font-size: 20px;
+  width: 90%;
+  color: rgb(26, 26, 26);
+}
+
+.bton {
+  gap: 350px;
+}
