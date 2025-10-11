@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+}
+main section {
+  flex-grow: 1;
+  height: 100%;
+  background-color: rgb(6, 1, 29);
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+main section:hover {
+  flex-grow: 3;
+}
+main section:nth-child(1) {
+  background-image: url("https://cdn.britannica.com/39/182839-050-A2522133/Grant-Gustin-The-Flash-title-character.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main section:nth-child(2) {
+  background-image: url("https://wallpapercat.com/w/full/0/8/f/325854-1284x2778-iphone-hd-wonder-woman-movie-background-photo.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main section:nth-child(3) {
+  background-image: url("https://wallpapercat.com/w/full/e/8/b/472124-1536x2732-iphone-hd-christian-bale-batman-background-photo.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/736x/e0/20/95/e020954e221fb36b5f486a8a43734a16.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/736x/49/c9/27/49c927a7efa9f38955536e7aeaabb6a3.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main section:nth-child(6) {
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/485/493/desktop-wallpaper-dc-cyborg-dc-extended-universe-cyborg-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+}/*# sourceMappingURL=style.css.map */
