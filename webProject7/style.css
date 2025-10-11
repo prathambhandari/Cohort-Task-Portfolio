@@ -206,16 +206,16 @@ body {
   grid-area: p;
 }
 .card1 {
-  background-image: url("./images/navis/men3.png");
+  background-image: url("navis/men3.png");
 }
 .card2 {
-  background-image: url("./images/navis/man1.jpg");
+  background-image: url("navis/man1.jpg");
 }
 .card3 {
-  background-image: url("./images/navis/man2.jpg");
+  background-image: url("navis/man2.jpg");
 }
 .card4 {
-  background-image: url("./images/navis/woman1.jpg");
+  background-image: url("navis/woman1.jpg");
 }
 .card5 {
   background-image: url("https://images.stockcake.com/public/1/b/2/1b233006-c7d5-4955-8499-b591153b7fd7_large/confident-business-professional-stockcake.jpg");
