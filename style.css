@@ -42,7 +42,7 @@ main section {
   justify-content: center;
   overflow: hidden;
   align-items: end;
-  box-shadow: 2px 1px 15px rgb(114, 114, 114);
+  box-shadow: 2px 1px 15px rgb(58, 58, 58);
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 main section .box {
@@ -71,11 +71,10 @@ main section .box a {
 }
 main section .box a:hover {
   color: white;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(22, 22, 22);
 }
 main section:hover {
-  height: 320px;
-  width: 420px;
+  transform: scale(1.2);
 }
 main section:nth-child(1) {
   background-image: url(./images/projectImg/1.png);
