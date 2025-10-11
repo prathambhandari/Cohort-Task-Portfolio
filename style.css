@@ -10,17 +10,25 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: rgb(15, 15, 15);
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
 }
 
 #h11 {
   padding: 20px;
-  font-size: 40px;
+  font-size: 17px;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: white;
-  background-color: rgb(15, 15, 15);
+  background-color: rgba(0, 0, 0, 0.918);
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px black;
 }
 
 main {
@@ -42,36 +50,62 @@ main section {
   justify-content: center;
   overflow: hidden;
   align-items: end;
-  box-shadow: 2px 1px 15px rgb(58, 58, 58);
+  box-shadow: 1px 1px 10px black;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 main section .box {
-  height: 80px;
+  height: 65px;
   width: 100%;
-  background: linear-gradient(transparent, black);
+  background: linear-gradient(transparent 10%, white 90%);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 30px;
   gap: 10px;
   align-items: center;
 }
 main section .box h1 {
   font-size: 20px;
   background-color: transparent;
-  color: white;
-  font-weight: 500;
+  color: black;
+  font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-main section .box a {
+main section .box .grp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+main section .box .grp a {
   padding: 12px 20px;
   font-size: 15px;
   border-radius: 50px;
   text-decoration: none;
-  color: black;
-  background-color: white;
-}
-main section .box a:hover {
   color: white;
-  background-color: rgb(22, 22, 22);
+  background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+  box-shadow: 1px 1px 10px white;
+}
+main section .box .grp a:hover {
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px black;
+  color: black;
+}
+main section .box .grp a:nth-child(2) {
+  background: black;
+  height: 40px;
+  width: 40px;
+  box-shadow: 1px 1px 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .box .grp a:nth-child(2) i {
+  font-size: 25px;
+}
+main section .box .grp a:nth-child(2):hover {
+  background: rgb(255, 255, 255);
+  color: black;
 }
 main section:hover {
   transform: scale(1.2);
