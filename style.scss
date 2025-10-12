@@ -10,8 +10,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.671);
+  background: linear-gradient(to left top, rgb(1, 1, 27), rgb(15, 0, 10));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +48,7 @@ main {
   padding: 50px;
 
   @include flex-center();
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 50px;
   section {
@@ -155,6 +155,10 @@ main {
     @include center();
   }
   section:nth-child(8) {
+    background-image: url(./images/projectImg/8.png);
+    @include center();
+  }
+  section:nth-child(9) {
     background-image: url(./images/projectImg/9.png);
     @include center();
   }
