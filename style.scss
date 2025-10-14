@@ -162,4 +162,8 @@ main {
     background-image: url(./images/projectImg/9.png);
     @include center();
   }
+  section:nth-child(10) {
+    background-image: url(./images/projectImg/10.png);
+    @include center();
+  }
 }

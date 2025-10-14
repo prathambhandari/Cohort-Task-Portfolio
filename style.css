@@ -158,4 +158,9 @@ main section:nth-child(9) {
   background-image: url(./images/projectImg/9.png);
   background-position: center;
   background-size: cover;
+}
+main section:nth-child(10) {
+  background-image: url(./images/projectImg/10.png);
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
