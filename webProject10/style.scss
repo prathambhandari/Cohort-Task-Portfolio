@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+@mixin imgs($pos) {
+  background-repeat: no-repeat;
+  background-position: $pos;
+  background-size: cover;
+  border-radius: 30px;
+}
+main {
+  display: grid;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.2fr 0.8fr;
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+  grid-template-areas:
+    "box1 box2 box2 box2"
+    "box1 box3 box4 box5";
+
+  #box1 {
+    grid-area: box1;
+    background-image: url("./images/image1.png");
+    @include imgs(center);
+    background-color: red;
+  }
+  #box2 {
+    grid-area: box2;
+    background-image: url("./images/image2.jpg");
+    @include imgs(top);
+    background-color: rgb(49, 12, 12);
+  }
+  #box3 {
+    grid-area: box3;
+    background-image: url("./images/image3.jpg");
+    @include imgs(center);
+    background-color: rgb(0, 255, 76);
+  }
+  #box4 {
+    grid-area: box4;
+    background-image: url("./images/image4.jpg");
+    @include imgs(center);
+    background-color: rgb(0, 22, 121);
+  }
+  #box5 {
+    grid-area: box5;
+    background-image: url("./images/image5.jpg");
+    @include imgs(top);
+    background-color: rgb(1, 80, 40);
+  }
+}
