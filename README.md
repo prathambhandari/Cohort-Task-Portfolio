@@ -1,1 +1,1 @@
-https://prathambhandari.github.io/Cohort-Task-Portfolio/
+https://cohorttask.netlify.app/
